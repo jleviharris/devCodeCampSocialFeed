@@ -1,9 +1,6 @@
 const DisplayPosts = (props) => {
     return ( 
         <div>
-
-       
-       
             {props.parentPosts.map((post) => {
                 return ( 
                 <div>
@@ -14,8 +11,6 @@ const DisplayPosts = (props) => {
                 </div>
                 )
             })}
-          
-         
      </div>
      );
 }
