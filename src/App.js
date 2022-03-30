@@ -1,24 +1,13 @@
 import React, { useState } from 'react';
-
+import DisplayPosts from './Components/DisplayPosts/DisplayPosts';
 
 function App() {
   
-  const[entries, setEntries] = useState([{name: 'Jon', postText: 'Hello world'}])
+  const[Posts, setPosts] = useState([{name: 'Jon', postText: 'Hello world', like: null, dislike:null}])
 
   return (
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-          <th>Post</th>
-          </tr>
-        </tbody>
-      </table>
+      <DisplayPosts parentPosts={Posts}/>
     </div>
   );
 }
