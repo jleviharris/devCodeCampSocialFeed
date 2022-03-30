@@ -9,7 +9,9 @@ const CreatePost = (props) => {
         event.preventDefault();
         let newPost = {
             name: name,
-            postText: post
+            postText: post,
+            // like: like,
+            // dislike: dislike
         };
         props.createNewPost(newPost);
     }
