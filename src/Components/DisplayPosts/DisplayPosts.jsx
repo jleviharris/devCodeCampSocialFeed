@@ -8,6 +8,8 @@ const DisplayPosts = (props) => {
                     <div>{post.postText}</div>
                     <div>{post.like}</div>
                     <div>{post.dislike}</div>
+                               {/* <FontAwesomeIcon icon="fa-solid fa-thumbs-up" /> */}
+            {/* <i class="fa-solid fa-thumbs-up"></i> */}
                 </div>
                 )
             })}
