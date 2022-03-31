@@ -4,7 +4,7 @@ import CreatePost from './Components/CreatePost/CreatePost';
 
 function App() {
   
-  const[Posts, setPosts] = useState([{name: null, postText: null, like: null, dislike:null}])
+  const[Posts, setPosts] = useState([])
 
   function addNewPost(post){
     let tempPost = [post, ...Posts];
@@ -13,9 +13,17 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-12'>
+          <div className='border-box, text-left'>
       <CreatePost  createNewPost={addNewPost}/>
+          </div>
+          <div className='border-box, col-md-8'>
       <DisplayPosts parentPosts={Posts}/>
+      </div>
+      </div>
+      </div>
     </div>
   );
 }

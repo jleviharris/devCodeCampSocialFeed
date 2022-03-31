@@ -10,19 +10,23 @@ const CreatePost = (props) => {
         let newPost = {
             name: name,
             postText: post,
-            // like: like,
-            // dislike: dislike
+            like: null,
+            dislike: null
         };
         props.createNewPost(newPost);
     }
 
     return ( 
         <form onSubmit={handlePost}>
-            <label>Name</label>
-            <input type="text" value={name} onChange={(event) => setName(event.target.value)}/>
-            <label>Post</label>
-            <input type="text" value={post} onChange={(event) => setPost(event.target.value)} />
-            <button type='submit'>Post</button>
+             <div class="form-group">
+                <label>Name</label>
+                <input class="form control" type="text" value={name} onChange={(event) => setName(event.target.value)}/>
+            </div>
+            <div class="form-group">
+                <label>Post</label>
+                <textarea class="form control form-control-lg" type="text" value={post} onChange={(event) => setPost(event.target.value)} />
+            </div>
+            <button type='submit' class="btn btn-primary">Post</button>
         </form>
      );
 }
