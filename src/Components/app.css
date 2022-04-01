@@ -50,12 +50,28 @@
   border: 1px;
   border-style: solid;
   border-color: black;
+  padding: 5px;
+  margin: 5px;
 }
-
-.post-border-box {
+.title {
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 0;
+  max-width: fit-content;
+}
+/* .post-border-box {
   border-bottom: 1px;
   border-style: solid;
   border-color: #666;
   border-bottom-width: 50%;
   align-items: center;
+} */
+#root {
+  background: url(./augustine-wong-3Om4DHcaAc0-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.btn-primary {
+  margin-top: 5px;
 }

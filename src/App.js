@@ -14,12 +14,26 @@ function App() {
 
   return (
     <div className='container'>
-      <div className='row'>
+      <div>
+        <h1 className='title'> <small className="text-white bg-dark">
+            S</small>
+            o<small className="text-white bg-dark">
+            c</small>
+            i<small className="text-white bg-dark">
+            a</small>
+            l<small className="text-white bg-dark">
+            <i class="fa-solid fa-couch"></i>
+            </small>
+            F<small className="text-white bg-dark">
+            e</small>
+            e<small className="text-white bg-dark">
+            d</small>
+            </h1>
         <div className='col-md-12'>
-          <div className='border-box, text-left'>
+          <div className='text-left'>
       <CreatePost  createNewPost={addNewPost}/>
           </div>
-          <div className='border-box, col-md-8'>
+          <div >
       <DisplayPosts parentPosts={Posts}/>
       </div>
       </div>
