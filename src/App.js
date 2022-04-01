@@ -4,8 +4,8 @@ import CreatePost from './Components/CreatePost/CreatePost';
 
 function App() {
   
-  const[Posts, setPosts] = useState([])
-
+  const[Posts, setPosts] = useState([]);
+  
   function addNewPost(post){
     let tempPost = [post, ...Posts];
     
@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className='container'>
-      <div>
         <h1 className='title'> <small className="text-white bg-dark">
             S</small>
             o<small className="text-white bg-dark">
@@ -22,7 +21,7 @@ function App() {
             i<small className="text-white bg-dark">
             a</small>
             l<small className="text-white bg-dark">
-            <i class="fa-solid fa-couch"></i>
+            <i className="fa-solid fa-couch"></i>
             </small>
             F<small className="text-white bg-dark">
             e</small>
@@ -38,8 +37,9 @@ function App() {
       </div>
       </div>
       </div>
-    </div>
   );
 }
+
+
 
 export default App;

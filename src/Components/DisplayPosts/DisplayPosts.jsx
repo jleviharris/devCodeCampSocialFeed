@@ -1,16 +1,17 @@
 import '../app.css';
+import CustomButton from '../Button/Button'
 const DisplayPosts = (props) => {
     return ( 
-        <div>
+        <div className="bottom-container">
             {props.parentPosts.map((post) => {
                 return ( 
-                <div className="border-box">
-                    <div className='text-left'>{post.name}</div>
-                    <div className='text-left'>{post.postText}</div>
+                <div className="border-box" key={post.name}>
+                    <div className='text-left name'>{post.name}</div>
+                    <div className='text-left text'>{post.postText}</div>
                     <div className="container">
                         <div className="row">
-                            <div className='border-box, text-end, col'><button type="toggle" class="likeButton"><i class="fa fa-thumbs-up"></i></button></div>
-                            <div className='border-box, text-end, col'><button type="toggle" class="dislikeButton"><i class="fa fa-thumbs-down"></i></button></div>
+                            <div className='text-end col'><CustomButton/> </div>
+                            {/* <div className='border-box text-end col'><button  className="dislikeButton"><i className="fa fa-thumbs-down"></i></button></div> */}
                         </div>
                     </div>
                 </div>

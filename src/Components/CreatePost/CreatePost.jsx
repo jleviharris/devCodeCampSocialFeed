@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import '../app.css';
+import '../Button/Button.css';
 const CreatePost = (props) => {
 
     const [name, setName] = useState('');
@@ -18,15 +19,15 @@ const CreatePost = (props) => {
 
     return ( 
         <form onSubmit={handlePost}>
-             <div class="form-group">
+             <div className="form-group">
                 <label>Name</label>
-                <input  type="text" class="form-control" value={name} onChange={(event) => setName(event.target.value)}/>
+                <input  type="text" className="form-control" value={name} onChange={(event) => setName(event.target.value)}/>
             </div>
-            <div class="form-group">
+            <div className="form-group">
                 <label>Post</label>
-                <textarea class="form-control" type="text" value={post} onChange={(event) => setPost(event.target.value)} />
+                <textarea className="form-control" type="text" value={post} onChange={(event) => setPost(event.target.value)} />
             </div>
-            <button type='submit' class="btn btn-primary">Post</button>
+            <button type='submit' className="btn btn-primary">Post</button>
         </form>
      );
 }

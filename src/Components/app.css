@@ -1,51 +1,3 @@
-.likeButton {
-  display: inline-block;
-  padding: 5x 10px;
-  font-size: 10px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #3b4255;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  margin: 0.5rem;
-}
-
-.dislikeButton:active {
-  background-color: #e22d15;
-  color: black;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.dislikeButton {
-  display: inline-block;
-  padding: 5x 10px;
-  font-size: 10px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #424c68;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-  margin: 0.5rem;
-}
-
-.likeButton:active {
-  background-color: #39cc2c;
-  color: black;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.button-align {
-  align-items: center;
-}
-
 .border-box {
   border: 1px;
   border-style: solid;
@@ -54,9 +6,9 @@
   margin: 5px;
 }
 .title {
-  border: 1px;
+  /* border: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: black; */
   padding: 0;
   max-width: fit-content;
 }
@@ -68,10 +20,24 @@
   align-items: center;
 } */
 #root {
+  /* background: url(./augustine-wong-3Om4DHcaAc0-unsplash.jpg);
+  background-size: initial;
+  height: 100vh;
+  background-repeat: round; */
+  background: rgb(16, 128, 109);
+  height: 100vh;
+  background-repeat: repeat-y;
+}
+.bottom-container {
   background: url(./augustine-wong-3Om4DHcaAc0-unsplash.jpg);
   background-size: cover;
-  height: 100vh;
 }
-.btn-primary {
-  margin-top: 5px;
+
+.text {
+  background-color: rgba(255, 255, 255, 0.589);
+  max-width: fit-content;
+  padding: 2px 15px 2px 5px;
+}
+.name {
+  font-size: 2rem;
 }
