@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='container'>
-        <h1 className='title'> <small className="text-white bg-dark">
+        {/* <h1 className='title'> <small className="text-white bg-dark">
             S</small>
             o<small className="text-white bg-dark">
             c</small>
@@ -27,6 +27,11 @@ function App() {
             e</small>
             e<small className="text-white bg-dark">
             d</small>
+            </h1> */}
+            <h1 id="title" className='title'>
+            Social
+            <i className="fa-solid fa-couch"></i>
+            Feed
             </h1>
         <div className='col-md-12'>
           <div className='text-left'>

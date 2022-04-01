@@ -11,7 +11,6 @@ const DisplayPosts = (props) => {
                     <div className="container">
                         <div className="row">
                             <div className='text-end col'><CustomButton/> </div>
-                            {/* <div className='border-box text-end col'><button  className="dislikeButton"><i className="fa fa-thumbs-down"></i></button></div> */}
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@
   border-style: solid;
   border-color: black;
   padding: 5px;
-  margin: 5px;
+  /* margin: 5px; */
 }
 .title {
   /* border: 1px;
@@ -11,6 +11,7 @@
   border-color: black; */
   padding: 0;
   max-width: fit-content;
+  font-size: 4rem;
 }
 /* .post-border-box {
   border-bottom: 1px;
@@ -24,20 +25,27 @@
   background-size: initial;
   height: 100vh;
   background-repeat: round; */
-  background: rgb(16, 128, 109);
+  background: rgb(0, 0, 0);
   height: 100vh;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
+  background-size: cover;
+  color: white;
+}
+html {
+  background: rgb(0, 0, 0);
 }
 .bottom-container {
-  background: url(./augustine-wong-3Om4DHcaAc0-unsplash.jpg);
+  background: rgba(255, 253, 253, 0.904);
   background-size: cover;
+  color: black;
 }
 
 .text {
-  background-color: rgba(255, 255, 255, 0.589);
+  background-color: rgba(255, 253, 253, 0.904);
   max-width: fit-content;
   padding: 2px 15px 2px 5px;
 }
 .name {
   font-size: 2rem;
 }
+
